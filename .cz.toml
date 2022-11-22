@@ -1,0 +1,45 @@
+[tool]
+[tool.commitizen]
+name = "cz_customize"
+version = "0.0.1"
+tag_format = "0.0.1"
+
+[tool.commitizen.customize]
+message_template = "[{{change_type}}]{% if scope %} {{scope}}{% endif %} — {{cmsg}}"
+example = "feature 5143: this feature enable customize through config file"
+# schema = "<type>[optional scope]: <cmsg>"
+# schema_pattern = "\\[(feat|fix|refactor|optim|style|test|docs|build|ci)\\]( t?\\s)? — (\\s)"
+bump_pattern = "^(break|new|fix|hotfix)"
+bump_map = {"break" = "MAJOR", "new" = "MINOR", "fix" = "PATCH", "hotfix" = "PATCH"}
+info_path = "cz_customize_info.txt"
+info = """
+This is customized info
+"""
+
+[[tool.commitizen.customize.questions]]
+type = "list"
+name = "change_type"
+choices = [
+    { value = "feat",     name = "feat:     new feature / behavioural code" },
+    { value = "fix",      name = "fix:      bugfix" },
+    { value = "refactor", name = "refactor: restructure code without changing its behaviour" },
+    { value = "optim",    name = "optim:    strictly optimisation changes" },
+    { value = "style",    name = "style:    linting / code style" },
+    { value = "test",     name = "test:     everything related to testing" },
+    { value = "docs",     name = "docs:     Everything related to docs" },
+    { value = "build",    name = "build:    Build system or external dependencies" },
+    { value = "ci",       name = "ci:       Changes continuous integration / pre-deploy pipeline" }
+]
+message = "Change type:"
+
+[[tool.commitizen.customize.questions]]
+type = "list"
+name = "scope"
+choices = ["", "data", "render", "logic", "frontend", "deploy"]
+message = "Scope (optional):"
+default = ""
+
+[[tool.commitizen.customize.questions]]
+type = "input"
+name = "cmsg"
+message = "Commit Text:"
