@@ -10,6 +10,7 @@ BLACK     = 'ÿc6'
 GOLD2     = 'ÿc7'  # TODO: tan? different than gold@4? figure this out
 ORANGE    = 'ÿc8'  # crafted
 YELLOW    = 'ÿc9'  # rare
+PURPLE    = 'ÿc;'
 
 # TODO: these need to be systematically retested; some no longer work in d2r
 WHITE2    = 'ÿc='
@@ -18,7 +19,6 @@ DRK_BLUE  = 'ÿc"'
 LT_BLUE   = 'ÿc+'
 DRK_GREEN = 'ÿc:'  # works for sure
 LT_GREEN  = 'ÿc<'
-PURPLE    = 'ÿc;'
 PINK      = 'ÿcO'
 LILAC     = 'ÿcP'
 
