@@ -8,11 +8,13 @@
 
 > Annotate entire item corpus with pickup reason context.
 
-1. `(current) → → →` prelim annotations & common misc items 
+1. `(current work) → → →` prelim annotations & common misc items 
 2. tier list tagging
+    - runes & misc item types
     - runeword bases
     - sets & uniques
     - niche set/unique/build items
+    - +skills / reroll items
     - leveling items
 3. crafting bases
 4. refactor pass
