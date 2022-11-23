@@ -19,7 +19,6 @@
 3. crafting bases
 4. refactor pass
 
-
 — style processor
 ---
 
@@ -29,6 +28,8 @@
 2. default styling for sets, uniques, and bases
 3. item-text tag composer
 4. refactor pass
+5. sound pass
+6. particles/effects pass
 
 
 — mod pkg generation
