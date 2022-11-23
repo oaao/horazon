@@ -8,7 +8,7 @@
 
 > Annotate entire item corpus with pickup reason context.
 
-1. <span style="color:red">&rarr; `(current)`</span> prelim annotations & common misc items
+1. `(current) → → →` prelim annotations & common misc items 
 2. tier list tagging
     - runeword bases
     - sets & uniques
