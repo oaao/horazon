@@ -16,57 +16,57 @@ ITEMS = (
     {
         # key — removed by default, but styled since it can smooth out LK run pit stops
         "key": "key",
-        "long_name": f"{_.GREY}[{_.GOLD}k{_.GREY}]",
+        "long_name":  f"{_.GREY}[{_.GOLD}k{_.GREY}]",
         "short_name": f"{_.GREY}[ {_.GOLD}k{_.GREY} ]",
     },
     # ------------------------------------------------ regen potions
     {
         # super healing potion
         "key": "hp5",
-        "long_name": f"{_.RED}health{_.WHITE}POT",
+        "long_name":  f"{_.RED}health{_.WHITE}POT",
         "short_name": f"{_.RED}h{_.WHITE}POT",
     },
     {
         # super mana potion
         "key": "mp5",
-        "long_name": f"{_.BLUE}mana{_.WHITE}POT",
+        "long_name":  f"{_.BLUE}mana{_.WHITE}POT",
         "short_name": f"{_.BLUE}m{_.WHITE}POT",
     },
     {
         # rejuvenation potion
         "key": "rvs",
-        "long_name": f"{_.PURPLE}35{_.WHITE}juv",
+        "long_name":  f"{_.PURPLE}35{_.WHITE}juv",
         "short_name": f"{_.PURPLE}35{_.WHITE}j",
     },
     {
         # rejuvenation potion
         "key": "rvl",
-        "long_name": f"{_.PURPLE}FULL{_.WHITE}juv",
+        "long_name":  f"{_.PURPLE}FULL{_.WHITE}juv",
         "short_name": f"{_.PURPLE}FULL{_.WHITE}j",
     },
     # ------------------------------------------------ scrolls & tomes
     {
         # scroll of town portal
         "key": "tsc",
-        "long_name": f"{_.BLUE}§{_.WHITE}tp",
+        "long_name":  f"{_.BLUE}§{_.WHITE}tp",
         "short_name": f"{_.BLUE}§",
     },
     {
         # tome of town portal
         "key": "tbk",
-        "long_name": f"{_.BLUE}§{_.WHITE}tome",
+        "long_name":  f"{_.BLUE}§{_.WHITE}tome",
         "short_name": f"{_.BLUE}§{_.WHITE}[]",
     },
     {
         # scroll of identify
         "key": "isc",
-        "long_name": f"{_.RED}§{_.WHITE}id",
+        "long_name":  f"{_.RED}§{_.WHITE}id",
         "short_name": f"{_.RED}§",
     },
     {
         # tome of identify
         "key": "ibk",
-        "long_name": f"{_.RED}§{_.WHITE}tome",
+        "long_name":  f"{_.RED}§{_.WHITE}tome",
         "short_name": f"{_.RED}§{_.WHITE}[]",
     },
     # ------------------------------------------------ gems (flawless & perfect)
@@ -80,7 +80,7 @@ AFFIXES = (
     {
         # gold
         "key": "glg",
-        "long_name": f"{_.GOLD}g",
+        "long_name":  f"{_.GOLD}g",
         "short_name": f"{_.GOLD}g",
     },
 )
