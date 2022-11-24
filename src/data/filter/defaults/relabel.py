@@ -84,3 +84,19 @@ AFFIXES = (
         "short_name": f"{_.GOLD}g",
     },
 )
+
+
+# N.B. Latent "{}" placeholder only works with .format(), not f-string
+# TODO: Logic should compose keyname, derive name, and add 'real' colours.
+# TODO: Logic should pad mid/high rune names to 3-char length (Um, Lo, etc.)
+RUNES = {
+    # TODO: make HR/MR ranks composable. default: non-hellforge floor
+    "high": {
+        "label_wrapper": "\n~         {name}         ~\n{purple}~        ~ ! g g ! ~       ~\n",
+        "rank_range":    (26, 33),  # vex -> zod
+    },
+    "mid": {
+        "label_wrapper": "~    {name}    ~\n{purple}~   ~ ! -- ! ~   ~",
+        "rank_range":    (20, 25),  # lem -> gul
+    }
+}
