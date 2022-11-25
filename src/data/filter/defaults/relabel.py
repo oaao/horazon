@@ -176,11 +176,11 @@ AFFIXES = (
 RUNES = {
     # TODO: make HR/MR ranks composable. default: non-hellforge floor
     "high": {
-        "label_wrapper": "\n~         {name}         ~\n{purple}~        ~ ! g g ! ~       ~\n",
+        "label_wrapper": decoration.HR,
         "rank_range":    (26, 33),  # vex -> zod
     },
     "mid": {
-        "label_wrapper": "~    {name}    ~\n{purple}~   ~ ! -- ! ~   ~",
+        "label_wrapper": decoration.MR,
         "rank_range":    (20, 25),  # lem -> gul
     },
 }
