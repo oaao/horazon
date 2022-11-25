@@ -2,12 +2,11 @@
 
 IMPORTANT: Item names are rendered bottom-up, for both composed and self-complete item names!
 ---------------------------------------------------------------------------------------------
-e.g. 1) if you wanted 'PICK ME' *above* an item name, you would "\n  {name}  \n  PICK ME  \n"
-e.g. 2) A colour tag *terminating* an item name will apply to the row above it.
-      - "{_.ORANGE}Diadem" would mean "Griffon's Eye" shows above it in unique colour.
-      - "{_.ORANGE}Diadem{_.WHITE}" would mean "Griffon's Eye" becomes white!
+e.g. 1) if you wanted 'haha' *above* an item name, you would "\n  {name}  \n  haha  \n"
+e.g. 2) a colour tag *terminating* an item name will apply to the row above it.
+      - "{orange}Diadem" would mean 'Griffon's Eye' displays above it in unique colour.
+      - "{orange}Diadem{white}" would mean the "Griffon's Eye" line renders white!
 """
-from ..styling import colours as _
 
 
 # Many label restyles copy from or iterate on (with permission) AlexisEvo's original work
@@ -16,58 +15,58 @@ ITEMS = (
     {
         # key — removed by default, but styled since it can smooth out LK run pit stops
         "key": "key",
-        "long_name":  f"{_.GREY}[{_.GOLD}k{_.GREY}]",
-        "short_name": f"{_.GREY}[ {_.GOLD}k{_.GREY} ]",
+        "long_name":  "{grey}[{gold}k{grey}]",
+        "short_name": "{grey}[ {gold}k{grey} ]",
     },
     # ------------------------------------------------ regen potions
     {
         # super healing potion
         "key": "hp5",
-        "long_name":  f"{_.RED}health{_.WHITE}POT",
-        "short_name": f"{_.RED}h{_.WHITE}POT",
+        "long_name":  "{red}health{white}POT",
+        "short_name": "{red}h{white}POT",
     },
     {
         # super mana potion
         "key": "mp5",
-        "long_name":  f"{_.BLUE}mana{_.WHITE}POT",
-        "short_name": f"{_.BLUE}m{_.WHITE}POT",
+        "long_name":  "{blue}mana{white}POT",
+        "short_name": "{blue}m{white}POT",
     },
     {
         # rejuvenation potion
         "key": "rvs",
-        "long_name":  f"{_.PURPLE}35{_.WHITE}juv",
-        "short_name": f"{_.PURPLE}35{_.WHITE}j",
+        "long_name":  "{purple}35{white}juv",
+        "short_name": "{purple}35{white}j",
     },
     {
         # rejuvenation potion
         "key": "rvl",
-        "long_name":  f"{_.PURPLE}FULL{_.WHITE}juv",
-        "short_name": f"{_.PURPLE}FULL{_.WHITE}j",
+        "long_name":  "{purple}FULL{white}juv",
+        "short_name": "{purple}FULL{white}j",
     },
     # ------------------------------------------------ scrolls & tomes
     {
         # scroll of town portal
         "key": "tsc",
-        "long_name":  f"{_.BLUE}§{_.WHITE}tp",
-        "short_name": f"{_.BLUE}§",
+        "long_name":  "{blue}§{white}tp",
+        "short_name": "{blue}§",
     },
     {
         # tome of town portal
         "key": "tbk",
-        "long_name":  f"{_.BLUE}§{_.WHITE}tome",
-        "short_name": f"{_.BLUE}§{_.WHITE}[]",
+        "long_name":  "{blue}§{white}tome",
+        "short_name": "{blue}§{white}[]",
     },
     {
         # scroll of identify
         "key": "isc",
-        "long_name":  f"{_.RED}§{_.WHITE}id",
-        "short_name": f"{_.RED}§",
+        "long_name":  "{red}§{white}id",
+        "short_name": "{red}§",
     },
     {
         # tome of identify
         "key": "ibk",
-        "long_name":  f"{_.RED}§{_.WHITE}tome",
-        "short_name": f"{_.RED}§{_.WHITE}[]",
+        "long_name":  "{red}§{white}tome",
+        "short_name": "{red}§{white}[]",
     },
     # ------------------------------------------------ gems (flawless & perfect)
     # TODO: all flawless and perfect gems (i don't like any of my current stylings)
@@ -80,23 +79,21 @@ AFFIXES = (
     {
         # gold
         "key": "glg",
-        "long_name":  f"{_.GOLD}g",
-        "short_name": f"{_.GOLD}g",
+        "long_name":  "{gold}g",
+        "short_name": "{gold}g",
     },
 )
 
 
 # N.B. Latent "{}" placeholder only works with .format(), not f-string
-# TODO: Logic should compose keyname, derive name, and add 'real' colours.
-# TODO: Logic should pad mid/high rune names to 3-char length (Um, Lo, etc.)
 RUNES = {
     # TODO: make HR/MR ranks composable. default: non-hellforge floor
     "high": {
-        "label_wrapper": "\n~         {name}         ~\n{purple}~        ~ ! g g ! ~       ~\n",
+        "label_wrapper": ,
         "rank_range":    (26, 33),  # vex -> zod
     },
     "mid": {
-        "label_wrapper": "~    {name}    ~\n{purple}~   ~ ! -- ! ~   ~",
+        "label_wrapper": ,
         "rank_range":    (20, 25),  # lem -> gul
     }
 }
