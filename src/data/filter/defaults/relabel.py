@@ -69,6 +69,96 @@ ITEMS = (
         "name":  "{red}§{white}tome",
         "compact_name": "{red}§{white}[]",
     },
+    # ------------------------------------------------ gems (flawless & perfect)
+    {
+        # flawless amethyst
+        "key":  "gzv",
+        "name": "{purple}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect amethyst
+        "key":  "gpv",
+        "name": "{purple}" + decoration.PERFECT,
+    },
+    {
+        # flawless topaz
+        "key":  "gly",
+        "name": "{yellow}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect topaz
+        "key":  "gpy",
+        "name": "{yellow}" + decoration.PERFECT,
+    },
+    {
+        # flawless sapphire
+        "key":  "glb",
+        "name": "{blue}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect sapphire
+        "key":  "gpb",
+        "name": "{blue}" + decoration.PERFECT,
+    },
+    {
+        # flawless emerald
+        "key":  "glg",
+        "name": "{lime}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect emerald
+        "key":  "gpg",
+        "name": "{lime}" + decoration.PERFECT,
+    },
+    {
+        # flawless ruby
+        "key":  "glr",
+        "name": "{red}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect ruby
+        "key":  "gpr",
+        "name": "{red}" + decoration.PERFECT,
+    },
+    {
+        # flawless diamond
+        "key":  "glw",
+        "name": "{white}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect diamond
+        "key":  "gpw",
+        "name": "{white}" + decoration.PERFECT,
+    },
+    {
+        # flawless skull
+        "key":  "skl",
+        "name": "{grey}" + decoration.FLAWLESS,
+    },
+    {
+        # perfect skull
+        "key":  "skz",
+        "name": "{grey}" + decoration.PERFECT,
+    },
+
+    # ------------------------------------------------ jewels & charms (small & grand)
+    {
+        # small charm
+        "key":  "cm1",
+        "name": decoration.PAD.format(name="Small"),
+        "compact_name": decoration.PAD.format(name="Sc"),
+    },
+    {
+        # grand charm — N.B. changing its colour undifferentiates Gheed's!
+        "key":  "cm3",
+        "name": decoration.PAD.format(name="Srand"),
+        "compact_name": decoration.PAD.format(name="Gc"),
+    },
+    {
+        # jewels
+        "key":  "jew",
+        "name": decoration.PAD.format(name="Jewel"),
+    },
 )
 
 
